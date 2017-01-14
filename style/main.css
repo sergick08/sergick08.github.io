@@ -1,0 +1,602 @@
+/*CSS RESET */
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+
+	Eric Meyer					:: http://meyerweb.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+
+-------------------------------------------------------------------------------*/
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+article, aside, figure, footer, header, nav, section, details, summary {display: block;}
+
+/* Handle box-sizing while better addressing child elements:
+   http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+
+/* Responsive images and other embedded objects
+*/
+img,
+object,
+embed {max-width: 100%;}
+
+/*
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+	 In fact, it *will* cause problems with Google Maps' controls at small size.
+	If this is the case for you, try uncommenting the following:
+
+#map img {
+		max-width: none;
+}
+*/
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+
+/* we use a lot of ULs that aren't bulleted.
+	don't forget to restore the bullets within content. */
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+    white-space: pre; /* CSS2 */
+    white-space: pre-wrap; /* CSS 2.1 */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom;}
+.ie7 input[type="checkbox"] {vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+
+small {font-size: 85%;}
+
+strong {font-weight: bold;}
+
+td, td img {vertical-align: top;}
+
+/* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {width: auto; overflow: visible;}
+
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+/* End CSS Reset */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+/* Fonts */
+@font-face{ 
+	font-family: OpenSansBold;
+	src:url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face{
+	font-family: OpenSansLight;
+	src:url(../fonts/OpenSans-Light.ttf);
+}
+/* End Fonts */
+*{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	color: #333;
+}
+body{
+	background-color: #f3f3f3;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+/* Header */
+.main-header{
+	width: 100%;
+	height: 25px;
+	margin-top: 24px;
+	position: absolute;
+	/* background: #ccc; */
+}
+.main-header *{
+	color: #fff;
+}
+.block-slider *{
+	color: #fff;
+}
+
+/* Logo */
+.block-logo{
+	float: left;
+}
+
+.logo{
+	margin-left: 20px;
+}
+.logo a{
+	text-decoration: none;
+	transition: 0.8s;
+	
+}
+.logo a:hover{
+	border-bottom: 1px solid #0eaaa6;
+}
+.logo span{
+	padding-left: 8px;
+	font-size: 20px;
+	font-family: OpenSansLight ,sans-serif, Arial;
+}
+
+/* Header Nav */
+.block-header-nav{
+	float: right
+}
+.header-nav{
+	float: left;
+}
+.header-nav ul{
+	margin: 0;
+	padding: 0;
+	margin-right: 5px;
+	font-size: 0;
+
+}
+.header-nav ul li{
+	display: inline-block;
+	margin-left: 20px;
+	padding-top: 10px;
+}
+.header-nav ul li a{
+	text-decoration: none;
+	display: block;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	transition: 0.8s;
+
+}
+.header-nav ul li a:hover{
+	border-bottom: 1px solid #0eaaa6;
+}
+
+.header-search{
+	float: left;
+	padding-top: 5px;
+    margin-right: 20px;
+}
+
+input {
+    outline: none;
+}
+
+
+input[type=search] {
+    background:url('../img/search.png') no-repeat 9px center;
+    border: solid 1px #ccc;
+    padding: 5px 10px 5px 20px;
+    border: none;
+    width: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all .5s;
+    color: #000;
+}
+input[type=search]:focus {
+    width: 250px;
+    background-color: #fff;
+    border-color: #6dcff6;
+    cursor: auto;
+    margin-left: 10px;
+   
+}
+
+
+/* Slaider*/
+.slider{
+	width: 100%;
+	height: 600px;
+	background: url('../img/slaid3.jpg') no-repeat;
+
+}
+.slider-title{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 160px;
+}
+.slider-title span{
+	font-size: 11px;
+	text-transform: uppercase;
+}
+.slider-title h1{
+	font-size: 40px;
+	font-family: OpenSansBold;
+	padding: 30px 0 20px 0;
+}
+.slider-title p{
+	font-size: 13px;
+	line-height: 18px;
+	padding-bottom: 20px;
+
+}
+
+.slider-title a{
+	background: #E60066;
+	margin: 20px auto;
+	width: 110px;
+	padding: 14px 0;
+	display: block;
+	border: 1px solid #fff;
+	font-size: 14px;
+	text-decoration: none;
+	box-sizing: content-box;
+	transition: 0.5s;
+}
+.slider-title a:hover{
+	background: #999;
+}
+/* Center-blocK */
+.wrapper{
+	width: 1100px;
+	margin: 0 auto;
+	padding-top: 45px;
+}
+.wrapper h2{
+	color: #333333;
+	font-size: 22px;
+	line-height: 18px;
+	padding-bottom: 33px;
+	font-family: OpenSansLight;
+}
+.section-main{
+	float: left;
+	width: 820px;
+	color: #000;
+}
+.aside{
+	float: right;
+	width: 225px;
+	color: #000;
+}
+/* Content */
+.styleblock{
+	border-radius: 5px;
+	border: 1px solid #ebebeb;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.content-block{
+	margin: 20px;
+}
+.content-block a{
+	font-size: 11px;
+	font-family: OpenSansBold;
+	text-transform: uppercase;
+	color: #A10048;
+	text-decoration: none;
+	line-height: 18px;
+}
+.content-block h3{
+	font-size: 20px;
+	font-family: OpenSansLight;
+	line-height: 18px;
+	margin: 20px 0;
+}
+.content-block span{
+	font-size: 12px;
+	line-height: 19px;
+	display: block;
+	margin-top: 60px;
+}
+
+.block-min{
+	width: 262px;
+	min-height: 480px;
+	box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.14);
+	
+}
+.block-max{
+	width: 540px;
+	height: 100%;
+	min-height: 480px;
+	box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.14);
+	/* height: 500px; */
+
+}
+.item-block1 .block-max{
+	float: left;
+}
+.item-block1 .block-min{
+	float: right;
+}
+.item-block2 .block-min{
+	float: left;
+}
+.item-block2 .block-max{
+	float: right;
+}
+.item-block3 {
+	display: flex;
+	justify-content: space-between;
+} 
+/* Prev Next */
+.block-next a{
+	text-decoration: none;
+	font-size: 13px;
+	color: #009999;
+	display: block;
+	line-height: 26px;	
+	padding: 5px;
+    transition: all .5s;
+}
+.block-next a:hover{
+	color: #ccc;
+	border: none;
+	border-radius: 50px;
+}
+.block-next .pre{
+	float: left;
+
+}
+.block-next .next{
+	float: right
+}
+.nextstyle{
+	width: 120px;
+	border: 1px solid #009999;
+	border-radius: 50px;
+	text-align: center;
+}
+
+/* Aside */
+.aside .title{
+	display: block;
+	padding-bottom: 30px;
+	font-size: 22px;
+	font-family: OpenSansLight;
+	line-height: 18px;
+}
+.aside a{
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 24px;
+	display: block;
+}
+.aside a:hover{
+	text-decoration: underline;
+	padding-right:10px;
+	transition: 0.4s;
+}
+.right-block{
+	margin-bottom: 40px;
+	text-align: right;
+
+}
+.aside .tag{
+	font-size: 11px;
+	color: #fff;
+	background-color: #777;
+	display: inline-block;
+	padding: 2px;
+	border-radius: 3px;
+	margin: 5px 5px 5px 0;
+}
+.wrp-tag{
+	margin-right: -8px;
+}
+
+/* End Aside */
+/* Footer */
+footer{
+	width: 100%;
+	background-color: #333;
+	margin-top: 150px;
+	padding: 40px 0;
+}
+footer *{
+	color: #fff;
+}
+.nav-footer{
+	width: 1100px;
+	margin: 0 auto;
+	color: #fff;
+	height: 200px;
+	display: flex;
+}
+.footer-link{
+	flex: 1;
+}
+.footer-link a{
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 20px;
+}
+.footer-link a:hover{
+	text-decoration: underline;
+}
+.footer-title{
+	font-family: OpenSansLight;
+	font-size: 16px;
+	line-height: 22px;
+	color: #c6e4e3;
+	display: block;
+	padding-bottom: 15px;
+}
+.tel{
+	font-size: 20px;
+	line-height: 22px;
+	font-stretch: normal;
+}
+address{
+	font-family: OpenSansLight;
+	font-size: 13px;
+	line-height: 18px;
+	font-style: normal;
+	margin:15px 0;
+}
+.social-link li{
+	float: left;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	margin-left: 3px;
+	transition: 0.5s;
+}
+.social-link li a{
+	width: 33px;
+	height: 33px;
+	display: block;
+}
+.social-link li:hover{
+	border: 1px solid #0cc;
+	border-radius: 50%;
+
+}
+.face{
+	background:  url('../img/f.svg') no-repeat;
+	background-position: 14px;
+}
+.tw{
+	background:  url('../img/t.svg') no-repeat;
+	background-position: 10px;
+}
+.gl{
+	background:  url('../img/g.svg') no-repeat;
+	background-position: 13px;
+}
+.inst{
+	background:  url('../img/i.svg') no-repeat;
+	background-position: 12px;
+}
+footer input{
+	border: 1px solid #dfdfdf;
+	height: 35px;
+	width: 260px;
+	border-radius: 3px;
+	padding-left: 15px;
+	margin-bottom: 15px;
+	transition: 0.5s;
+}
+footer [type="email"]{
+	color: #999;
+}
+footer [type="submit"]{
+	background: #0eaaa6;
+	color: #fff;
+	border: none;
+	
+}
+footer [type="submit"]:hover{
+	background: #038888;
+}
+
+.copy{
+	text-align: center;
+	margin-top: 60px;
+	font-size: 12px;
+	line-height: 17px;
+}
+.copy span{
+	display: block;
+}

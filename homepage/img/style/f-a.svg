@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #43609c;
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        fill: #43609c;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="btn_copy_2" data-name="btn copy 2" class="cls-1" cx="15.5" cy="15.5" r="15.5"/>
+  <path id="f" class="cls-2" d="M14.081,12.13v1.515H13V15.5h1.081V21H16.3V15.5h1.49s0.14-.888.207-1.859H16.309V12.371a0.53,0.53,0,0,1,.481-0.444H18V10H16.355A1.985,1.985,0,0,0,14.081,12.13Z"/>
+</svg>
