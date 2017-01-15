@@ -1,0 +1,245 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Hind:300|Lato:300|Playfair+Display');
+</style>
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, 
+form, fieldset, input, p, blockquote, table, th, td, embed, object {
+	padding: 0;
+	margin: 0; 
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+fieldset, img, abbr {
+	border: 0;
+	}
+address, caption, cite, code, dfn, em, 
+h1, h2, h3, h4, h5, h6, strong, th, var {
+	font-weight: normal;
+	font-style: normal;
+	}
+ul {
+	list-style: none;
+	}
+caption, th {
+	text-align: left;
+	}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1.0em;
+	}
+q:before, q:after {
+	content: '';
+	}
+a, ins {
+	text-decoration: none;
+	}
+/*micro-clearfix*/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #828282;
+}
+body{
+	font-family: 'Hind', sans-serif;
+	font-size: 14px;
+	color: #828282;
+	background-color: #fff;
+
+}
+.slider-title{
+	font-family: 'Lato', sans-serif;
+	}
+.clerfix:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+.content{
+	width: 1170px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.main-header{
+	min-height: 220px;
+	width: 100%;
+}
+/*Header-Top*/
+.header-top-wrp{
+	width: 100%;
+	padding-top:10px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #f8f6f6;
+}
+.header-top{
+	min-height: 47px;
+
+}
+.row-left{
+	float: left; 
+	
+}
+.row-right{
+	float: right;
+	
+}
+.top-item ,.header-nav-item , .searh-item{
+	display: inline-block;
+	vertical-align: middle;
+	
+}
+.ship{
+	padding-top: 5px;
+}
+.circle{
+	display: inline-block;
+	height: 5px;
+	width: 5px;
+	background-color: #5a5a5a;
+	border-radius: 50%;
+	margin: 0 10px 0 10px;
+	vertical-align: middle;
+}
+.phone-pic{
+	height: 16px;
+	width: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 6px 0 40px;
+	background-image: url(../img/style/phone.png);
+	background-repeat: no-repeat;
+	
+
+}
+.phone-pic:after{
+	margin-left: -20px;
+	height: 15px;
+	content:"";
+	display: inline-block;
+	border-left: 2px solid #5a5a5a;
+}
+.phone-link{
+	color:#608eb5;
+	font-weight: bold;
+	margin-left:5px;
+}
+.ship-link:hover{
+	color:#608eb5;
+}
+/*Top Cart*/
+
+.cart-link{
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	margin-right: 15px;
+	vertical-align: middle;
+}
+.cart-user{
+	background: url(../img/style/user.png) 0 0 no-repeat;
+}
+.cart-bookmarks{
+	background: url(../img/style/love.png)0 0 no-repeat;
+}
+.cart-cart{
+	background: url(../img/style/cart.png)0 0 no-repeat;
+}
+/*Header-bottom*/
+.header-bottom{
+	text-align: center;
+}
+/*----Logo-----*/
+.header-logo{
+	margin-bottom: 10px;
+}
+.logo-link{
+	display: block;
+}
+/*----Nav-Header-----*/
+.block-nav{
+	margin: 0;
+	padding:0;
+	font-size: 0;
+}
+.header-nav-item , .searh-item{
+	margin-left:15px;
+
+}
+
+.header-nav-link{
+	display: block;
+	font-family: 'Playfair Display', sans-serif;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 28px;
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+.header-nav-link:hover{
+	border-bottom: 2px solid #608eb5;
+	color: #608eb5;
+}
+/*End Header*/
+/*Slider-Block*/
+.slider-block{
+	width: 100%;
+	max-height: 665px;
+}
+.slider-item{
+	position: relative;
+}
+.slider-content-wrp{
+	position: absolute;
+	width: 100%;
+	top:50%;
+	bottom: 50%;
+}
+
+.slider-content{
+	width: 1170px;
+	margin: 0 auto;
+}
+.slider-title ,.slider-text{
+	color: #fff;
+}
+.slider-title{
+	font-size: 30px;
+	line-height: 25px;
+	font-weight: normal;
+	padding-bottom: 10px;
+}
+/*End-Slider*/
