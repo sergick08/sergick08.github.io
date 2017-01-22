@@ -380,8 +380,8 @@ body{
 }
 .flex-control-nav li a{
 	display: block;
-	height: 18px;
-	width: 18px;
+	height: 15px;
+	width: 15px;
 	border-radius: 50%;
 	background:  #fff;
 	text-indent: -99999px;
@@ -391,7 +391,7 @@ body{
 	background: #608eb5 ;
 	border: 1px solid #454344;
 }
-.flex-control-nav li a:focus{
+.flex-control-paging li a.flex-active{
 	background: #608eb5 ;
 	border: 1px solid #454344;
 }
