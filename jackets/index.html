@@ -3,73 +3,770 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shop</title>
+	<link rel="stylesheet" href="style/font-awesome.min.css">
 	<link rel="stylesheet" href="style/main.css">
+	
 </head>
 <body>
 	<header class="main-header">
 		<div class="header-top-wrp">
 			<div class="header-top content clearfix">
-				<div class="row-left">
-					<ul class="ship">
+				<div class="columm-left">
+					<!-- <ul class="ship">
 						<li class="top-item"><a href="#" class="ship-link">Easy Returns</a></li>
 						<li class="top-item ">
 						<span class="circle"></span>
 						<a href="#" class="ship-link">Free shipping on all orders over 100$</a></li>
-						<li class="top-item"><span class="phone-pic"></span><span class="phone-title">Call support free:</span><a href="#" class="phone-link">123-45-67-890</a></li>
-					</ul>
+						<li class="top-item"><span class="phone-pic"></span><span class="phone-title">Call support free:</span><a href="#" class="phone-link ">123-45-67-890  </a>
+						</li>
+					</ul> -->
+					<span class="top-info">Easy Returns</span>
+					<i aria-hidden="true" class="top-info fa fa-circle"></i>
+					<span class="top-info pic">Free shipping on all orders over 100$</span>
+					<i aria-hidden="true" class="top-info fa fa-phone"></i>
+					<span class="top-info">Call support free:
+					<span class="phone-text ">123-45-67-890  </span>
+					</span>
 				</div>
-				<div class="row-right">
+				<div class="columm-right">
 					<ul class="cart-top">
-						<li class="top-item"><a href="#" class="cart-link cart-user"></a></li>
-						<li class="top-item"><a href="#" class="cart-link cart-bookmarks"></a></li>
-						<li class="top-item cart-cart"><a href="#" class="cart-link"></a></li>
+						<li class="top-item"><a href="#" class="cart-link cart-user">
+							Account
+						</a>
+						</li>
+						<li class="top-item"><a href="#" class="cart-link cart-bookmarks">Wishlist</a></li>
+						<li class="top-item"><a href="#" class="cart-link cart-cart">
+							Cart
+						</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="header-bottom content">
 			<div class="header-logo">
-				<a href="#" class="logo-link"><img src="img/logo.png" width="180px" height="45px" alt="logo" class="logo-img"></a>
+				<a href="#"> 
+					<img src="img/logo.png" class="img" width="180px" height="45px" alt="logo" class="logo-img">	
+					<span class="logo-text">Shop Cavalier</span>
+				</a>
 			</div>
-			<nav class="header-nav">
+			<nav class="nav">
 				<ul class="block-nav">
-					<li class="header-nav-item"><a href="#" class="header-nav-link">New</a></li>
-					<li class="header-nav-item"><a href="#" class="header-nav-link">Woman</a></li>
-					<li class="header-nav-item"><a href="#" class="header-nav-link">Man</a></li>
-					<li class="header-nav-item"><a href="#" class="header-nav-link">Kids</a></li>
-					<li class="header-nav-item"><a href="#" class="header-nav-link">Lookbook</a></li>
-					<li class="header-nav-item"><a href="#" class="header-nav-link">Sale</a></li>
-					<li class="header-nav-item"><a href="#" class="header-nav-link">About</a></li>
-					<li class="searh-item"><a href="#"><img src="img/style/searh.png" width="16px" height="16px" alt="search" class="searh-pic"></a></li>
+					<li class="nav-item"><a href="#" class="nav-link">New</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Woman</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Man</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Kids</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Lookbook</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Sale</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+					<li class="search-item"><a href="#" class="search-item-link">Search</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-	<div class="slider-block">
+	<div class="slider-block clearfix">
 		<div class="flexslider">
 			<ul class="slides">
 				<li class="slider-item">
-				<div class="slider-content-wrp">
 					<div class="slider-content">
 						<div class="slider-title">Best theme for ecommerce</div>
 						<div class="slider-logo">
 							<img src="img/logo2.png" alt="" class="slider-logo-pic">
-							<span class="slider-info">All in one</span>
+							<span class="slider-info-bold">All</span>
+							<span class="slider-info">in one</span>
 						</div>
 						<div class="slider-text">When we seek to discover the best in others, we somehow bring out the best in ourselves. A man does not have to be an angel in order to be saint. Do noble things, do not dream them all day long. You have to believe in yourself.</div>
-						<div class="slider-submit-block">
-							<form action="#">
-								<span class="slider-submit"><input type="submit" class="porchase" value="Porchase"></span>
-								<span class="slider-submit"><input type="submit" class="porchase" value="More info"></span>
-							</form>
+						<div class="slider-link-block">
+								<span class="action-wrp">
+									<a href="#" class="action-link activ1">Porchase</a>
+								</span>
+								<span class="action-wrp">
+									<a href="#" class="action-link activ2">More info</a>
+								</span>		
+						</div>
+					</div>
+				<img src="img/slide1.jpg"  alt="slider1" class="img-slider img-size" width="100%" ></li>
+				<li class="slider-item">
+					<div class="slider-content">
+						<div class="slider-title">Best theme for ecommerce</div>
+						<div class="slider-logo">
+							<img src="img/logo2.png" alt="" class="slider-logo-pic">
+							<span class="slider-info-bold">All</span>
+							<span class="slider-info">in one</span>
+						</div>
+						<div class="slider-text">When we seek to discover the best in others, we somehow bring out the best in ourselves. A man does not have to be an angel in order to be saint. Do noble things, do not dream them all day long. You have to believe in yourself.</div>
+						<div class="slider-link-block">
+								<span class="action-wrp">
+									<a href="#" class="action-link activ1">Porchase</a>
+								</span>
+								<span class="action-wrp">
+									<a href="#" class="action-link activ2">More info</a>
+								</span>		
+						</div>
+					</div>
+				<img src="img/slide2.jpg"  alt="slider1" class="img-slider img-size" width="100%" >
+				</li>
+				<li class="slider-item">
+					<div class="slider-content">
+						<div class="slider-title">Best theme for ecommerce</div>
+						<div class="slider-logo">
+							<img src="img/logo2.png" alt="" class="slider-logo-pic">
+							<span class="slider-info-bold">All</span>
+							<span class="slider-info">in one</span>
+						</div>
+						<div class="slider-text">When we seek to discover the best in others, we somehow bring out the best in ourselves. A man does not have to be an angel in order to be saint. Do noble things, do not dream them all day long. You have to believe in yourself.</div>
+						<div class="slider-link-block">
+								<span class="action-wrp">
+									<a href="#" class="action-link activ1">Porchase</a>
+								</span>
+								<span class="action-wrp">
+									<a href="#" class="action-link activ2">More info</a>
+								</span>		
+						</div>
+					</div>
+				<img src="img/slide3.jpg"  alt="slider1" class="img-slider img-size" width="100%" >
+				</li>
+			</ul>
+		</div>
+	</div>
+	<section class="main-section content clearfix">
+		<span class="title-block">Featured Products</span>
+		<ul class="product-wrp clearfix">
+			<li class="product-item product-row">
+				<a href="#" class="product-link">				
+						<div class="product-content">
+							<div class="product-image">
+								<img src="img/product/Jacket.png"  width="270px" class="img-size"  alt="Man Jacket">
+							</div>
+							<div class="product-bottom clearfix">
+								<div class="product-info">
+									<span class="poduct-name">Man Jacket</span>
+									<div class="product-price">
+										<span class="currency">$</span>
+										<span class="price">233</span>
+									</div>
+								</div>
+							</div>
+						</div>
+				</a>
+				<div class="product-over-wrp">
+					<ul class="product-overlay">
+						<li class="overlay-item">
+							<a href="#" class="overlay-link overlay-search">Serch</a>
+						</li>
+						<li class="overlay-item">
+							<a href="#" class="overlay-link overlay-wishlist">Wishlist</a>
+						</li>
+						<li class="overlay-item">
+							<a href="#" class="overlay-link overlay-adcart">Add to cart</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="product-item product-row">
+				<a href="#" class="product-link">
+						<div class="product-content">
+							<div class="product-image">
+								<img src="img/product/Jacket.png" width="270px" class="img-size"  alt="Man Jacket">
+							</div>
+							<div class="product-bottom clearfix">
+								<div class="product-info">
+									<span class="poduct-name">Man Jacket</span>
+									<div class="product-price">
+										<span class="currency">$</span>
+										<span class="price">233</span>
+									</div>
+								</div>
+							</div>
+						</div>
+				</a>
+				<div class="product-over-wrp">
+					<ul class="product-overlay">
+						<li class="overlay-item">
+							<a href="#" class="overlay-link overlay-search">Serch</a>
+						</li>
+						<li class="overlay-item">
+							<a href="#" class="overlay-link overlay-wishlist">Wishlist</a>
+						</li>
+						<li class="overlay-item">
+							<a href="#" class="overlay-link overlay-adcart">Add to cart</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="product-item product-row">
+				<a href="#" class="product-link">
+						<div class="product-content">
+							<div class="product-image">
+								<img src="img/product/Jacket.png" width="270px" class="img-size"  alt="Man Jacket">
+							</div>
+							<div class="product-bottom clearfix">
+								<div class="product-info">
+									<span class="poduct-name">Man Jacket</span>
+									<div class="product-price">
+										<span class="currency">$</span>
+										<span class="price">233</span>
+									</div>
+								</div>
+							</div>
+						</div>
+				</a>
+				<div class="product-over-wrp">
+					<ul class="product-overlay">
+						<li class="overlay-item">
+							<a href="#" class="overlay-link overlay-search">Serch</a>
+						</li>
+						<li class="overlay-item">
+							<a href="#" class="overlay-link overlay-wishlist">Wishlist</a>
+						</li>
+						<li class="overlay-item">
+							<a href="#" class="overlay-link overlay-adcart">Add to cart</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="product-item product-row">
+				<a href="#" class="product-link">					
+						<div class="product-content">
+							<div class="product-image">
+								<img src="img/product/Jacket.png" width="270px" class="img-size"  alt="Man Jacket">
+							</div>
+							<div class="product-bottom clearfix">
+								<div class="product-info">
+									<span class="poduct-name">Man Jacket</span>
+									<div class="product-price">
+										<span class="currency">$</span>
+										<span class="price">233</span>
+									</div>
+								</div>
+							</div>
+						</div>
+				</a>
+				<div class="product-over-wrp">
+					<ul class="product-overlay">
+						<li class="overlay-item">
+							<a href="#" class="overlay-link overlay-search">Serch</a>
+						</li>
+						<li class="overlay-item">
+							<a href="#" class="overlay-link overlay-wishlist">Wishlist</a>
+						</li>
+						<li class="overlay-item">
+							<a href="#" class="overlay-link overlay-adcart">Add to cart</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<div class="banner clearfix">
+			<div class="columm-left banner-block">
+				<div class="big-banner">
+					<img src="img/baner-big.jpg" alt="banner Big" width="580px" height="580px" class="img-size">
+					<div class="banner-overlay big-banner-overlay">
+						<div class="banner-title">new in</div>
+							<div class="banner-text">Wedding suits</div>
+							<div class="action-wrp">
+								<a href="#" class="action-link activ1">Porchase</a>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div class="columm-left banner-block">
+				<div class="small-banner">
+					<img src="img/bane-small.jpg" alt="banner mini" width="580px height="286px" class="img-size">
+					<div class="banner-overlay small-overlay-top">
+						<div class="banner-title">new in</div>
+						<div class="banner-text">Wedding suits</div>
+						<div class="action-wrp">
+							<a href="#" class="action-link activ1">Porchase</a>
 						</div>
 					</div>
 				</div>
-				<img src="img/slide1.jpg" alt="slider1" class="slider-img" width="100%"></li>
+				<div class="small-banner">
+					<img src="img/baner-small3.jpg" alt="banner mini" width="580px" height="286px" class="img-size">
+					<div class="banner-overlay small-overlay-bottom">
+						<div class="banner-title">new in</div>
+						<div class="banner-text">Wedding suits</div>
+						<div class="action-wrp">
+							<a href="#" class="action-link activ1">Porchase</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="main-section content clearfix">
+		<div class="recent">
+			<span class="title-block">Recent Products</span>
+			<nav class="nav">
+				<ul class="block-nav">
+					<li class="nav-item"><a href="#" class="nav-link">All</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Suit’s</a></li>
+					<li class="nav-item"><a href="#" class="nav-link"> Jacket’s</a></li>
+					<li class="nav-item"><a href="#" class="nav-link"> Pants</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Accesories</a></li>
+				</ul>
+			</nav>	
+		</div>
+		<div class="box clearfix">
+			<ul class="product">
+				<li class="product-item product-columm">
+					<a href="#" class="product-link">
+							<div class="product-content">
+								<div class="product-image">
+									<img src="img/product/Jacket.png" width="270px" class="img-size"  alt="Man Jacket">
+								</div>
+								<div class="product-bottom clearfix">
+									<div class="product-info">
+										<span class="poduct-name">Man Jacket</span>
+										<div class="product-price">
+											<span class="currency">$</span>
+											<span class="price">233</span>
+										</div>
+									</div>
+								</div>
+							</div>
+					</a>
+					<div class="product-over-wrp">
+						<ul class="product-overlay">
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-search">Serch</a>
+							</li>
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-wishlist">Wishlist</a>
+							</li>
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-adcart">Add to cart</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="product-item product-columm">
+					<a href="#" class="product-link">
+							<div class="product-content">
+								<div class="product-image">
+									<img src="img/product/Jacket.png" width="270px" class="img-size"  alt="Man Jacket">
+								</div>
+								<div class="product-bottom clearfix">
+									<div class="product-info">
+										<span class="poduct-name">Man Jacket</span>
+										<div class="product-price">
+											<span class="currency">$</span>
+											<span class="price">233</span>
+										</div>
+									</div>
+								</div>
+							</div>
+					</a>
+					<div class="product-over-wrp">
+						<ul class="product-overlay">
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-search">Serch</a>
+							</li>
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-wishlist">Wishlist</a>
+							</li>
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-adcart">Add to cart</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<ul class="product">
+				<li class="product-item product-columm">
+					<a href="#" class="product-link">
+							<div class="product-content">
+								<div class="product-image">
+									<img src="img/product/Jacket.png" width="270px" class="img-size"  alt="Man Jacket">
+								</div>
+								<div class="product-bottom clearfix">
+									<div class="product-info">
+										<span class="poduct-name">Man Jacket</span>
+										<div class="product-price">
+											<span class="currency">$</span>
+											<span class="price">233</span>
+										</div>
+									</div>
+								</div>
+							</div>
+					</a>
+					<div class="product-over-wrp">
+						<ul class="product-overlay">
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-search">Serch</a>
+							</li>
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-wishlist">Wishlist</a>
+							</li>
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-adcart">Add to cart</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="product-item product-columm">
+					<a href="#" class="product-link">
+							<div class="product-content">
+								<div class="product-image">
+									<img src="img/product/Jacket.png" width="270px" class="img-size"  alt="Man Jacket">
+								</div>
+								<div class="product-bottom clearfix">
+									<div class="product-info">
+										<span class="poduct-name">Man Jacket</span>
+										<div class="product-price">
+											<span class="currency">$</span>
+											<span class="price">233</span>
+										</div>
+									</div>
+								</div>
+							</div>
+					</a>
+					<div class="product-over-wrp">
+						<ul class="product-overlay">
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-search">Serch</a>
+							</li>
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-wishlist">Wishlist</a>
+							</li>
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-adcart">Add to cart</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<ul class="product">
+				<li class="product-item product-columm">
+					<a href="#" class="product-link">
+							<div class="product-content">
+								<div class="product-image">
+									<img src="img/product/Jacket.png" width="270px" class="img-size"  alt="Man Jacket">
+								</div>
+								<div class="product-bottom clearfix">
+									<div class="product-info">
+										<span class="poduct-name">Man Jacket</span>
+										<div class="product-price">
+											<span class="currency">$</span>
+											<span class="price">233</span>
+										</div>
+									</div>
+								</div>
+							</div>
+					</a>
+					<div class="product-over-wrp">
+						<ul class="product-overlay">
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-search">Serch</a>
+							</li>
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-wishlist">Wishlist</a>
+							</li>
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-adcart">Add to cart</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="product-item product-columm">
+					<a href="#" class="product-link">
+							<div class="product-content">
+								<div class="product-image">
+									<img src="img/product/Jacket.png" width="270px" class="img-size"  alt="Man Jacket">
+								</div>
+								<div class="product-bottom clearfix">
+									<div class="product-info">
+										<span class="poduct-name">Man Jacket</span>
+										<div class="product-price">
+											<span class="currency">$</span>
+											<span class="price">233</span>
+										</div>
+									</div>
+								</div>
+							</div>
+					</a>
+					<div class="product-over-wrp">
+						<ul class="product-overlay">
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-search">Serch</a>
+							</li>
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-wishlist">Wishlist</a>
+							</li>
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-adcart">Add to cart</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<ul class="product">
+				<li class="product-item product-columm">
+					<a href="#" class="product-link">
+							<div class="product-content">
+								<div class="product-image">
+									<img src="img/product/Jacket.png" width="270px" class="img-size"  alt="Man Jacket">
+								</div>
+								<div class="product-bottom clearfix">
+									<div class="product-info">
+										<span class="poduct-name">Man Jacket</span>
+										<div class="product-price">
+											<span class="currency">$</span>
+											<span class="price">233</span>
+										</div>
+									</div>
+								</div>
+							</div>
+					</a>
+					<div class="product-over-wrp">
+						<ul class="product-overlay">
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-search">Serch</a>
+							</li>
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-wishlist">Wishlist</a>
+							</li>
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-adcart">Add to cart</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="product-item product-columm">
+					<a href="#" class="product-link">
+							<div class="product-content">
+								<div class="product-image">
+									<img src="img/product/Jacket.png" width="270px" class="img-size"  alt="Man Jacket">
+								</div>
+								<div class="product-bottom clearfix">
+									<div class="product-info">
+										<span class="poduct-name">Man Jacket</span>
+										<div class="product-price">
+											<span class="currency">$</span>
+											<span class="price">233</span>
+										</div>
+									</div>
+								</div>
+							</div>
+					</a>
+					<div class="product-over-wrp">
+						<ul class="product-overlay">
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-search">Serch</a>
+							</li>
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-wishlist">Wishlist</a>
+							</li>
+							<li class="overlay-item">
+								<a href="#" class="overlay-link overlay-adcart">Add to cart</a>
+							</li>
+						</ul>
+					</div>
+				</li>
 			</ul>
 		</div>
-		<div class="content"></div>
+	</section>
+	<div class="slider-block banner-bottom">	
+			<div class="banner-bottom-wrp">
+					<div class="banner-bottom-title">Made to Measure</div>
+					<div class="banner-bottom-info">
+						Made to treasure
+					</div>	
+						<span class="action-wrp">
+							<a href="#" class="action-link activ1">More info</a>
+						</span>		
+					</div>
+			<img src="img/slide1.jpg" alt="slider1" class="slider-img" width="100%" height="700px">
+		</div>
+	<section class="news content">
+		<div class="news-block clearfix">
+			<span class="title-block">Latest News</span>
+			<div class="sm-bl-news">
+				<div class="row-img">
+					<a href="#" class="news-link">
+						<img src="img/news1.jpg" alt="news" width="370px" height="250px" class="hover-img img-size">
+					</a>
+				</div>
+				<section class="news-wrp">
+					<header class="news-header">
+						<h3 class="news-header-title">
+							<a href="#" class="news-link">
+							Barneys’ Windows Get an Exciting Update From Isabel Marant
+							</a>
+						</h3>
+						<div class="when-news">
+							<data class="data-cat time-img"> November 25, 2015</data>
+							<a href="#" class="data-cat cat-img">Fashion</a>
+						</div>
+					</header>
+						<div class="article">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua enimad minim veniam, quis nostrud.</p>
+						</div>
+					<span class="action-wrp">
+							<a href="#" class="news-action action-link activ1 ">More info</a>
+						</span>
+				</section>
+			</div>
+			<div class="sm-bl-news">
+				<div class="row-img">
+					<a href="#" class="news-link">
+						<img src="img/news2.jpg" alt="news" width="370px" height="250px" class="hover-img img-size">
+					</a>
+				</div>
+				<section class="news-wrp">
+					<header class="news-header">
+						<h3 class="news-header-title">
+							<a href="#" class="news-link">
+							Barneys’ Windows Get an Exciting Update From Isabel Marant
+							</a>
+						</h3>
+						<div class="when-news">
+							<data class="data-cat time-img"> November 25, 2015</data>
+							<a href="#" class="data-cat cat-img">Fashion</a>
+						</div>
+					</header>
+						<div class="article">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua enimad minim veniam, quis nostrud.</p>
+						</div>
+					<span class="action-wrp">
+							<a href="#" class="news-action action-link activ1 ">More info</a>
+						</span>
+				</section>
+			</div>
+			<div class="sm-bl-news">
+				<div class="row-img">
+					<a href="#" class="news-link">
+						<img src="img/news1.jpg" alt="news" width="370px" height="250px" class="hover-img img-size">
+					</a>
+				</div>
+				<section class="news-wrp">
+					<header class="news-header">
+						<h3 class="news-header-title">
+							<a href="#" class="news-link">
+							Barneys’ Windows Get an Exciting Update From Isabel Marant
+							</a>
+						</h3>
+						<div class="when-news">
+							<data class="data-cat time-img"> November 25, 2015</data>
+							<a href="#" class="data-cat cat-img">Fashion</a>
+						</div>
+					</header>
+						<div class="article">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, seddo eiusmod tempor incididunt ut labore et dolore magna aliqua enimad minim veniam, quis nostrud.</p>
+						</div>
+					<span class="action-wrp">
+							<a href="#" class="news-action action-link activ1 ">More info</a>
+						</span>
+				</section>
+			</div>
+		</div>
+	</section>
+	<div class="brend">
+				<ul class="content clearfix">
+					<li class="nav-item brend-item">
+						<a href="#" class="brend-link">
+							<img src="img/signblack.png" alt="brend"  class="img-size brend-pic">
+						</a>
+					</li>
+					<li class="nav-item brend-item">
+						<a href="#" class="brend-link">
+							<img src="img/walnut.png" alt="brend"  class="img-size brend-pic">
+						</a>
+					</li>
+					<li class="nav-item brend-item">
+						<a href="#" class="brend-link">
+							<img src="img/sorh.png" alt="brend"  class="img-size brend-pic">
+						</a>
+					</li>
+					<li class="nav-item brend-item">
+						<a href="#" class="brend-link">
+							<img src="img/quick.png" alt="brend"  class="img-size brend-pic">
+						</a>
+					</li>
+					<li class="nav-item brend-item">
+						<a href="#" class="brend-link">
+							<img src="img/vintage.png" alt="brend"  class="img-size brend-pic">
+						</a>
+					</li>
+					<li class="nav-item brend-item">
+						<a href="#" class="brend-link">
+							<img src="img/burned.png" alt="brend"  class="img-size brend-pic">
+						</a>
+					</li>
+				</ul>
 	</div>
+	<section class="content clearfix wrp-bt-news">
+			<div class="columm-left bottom-news">
+				<h2 class="title-block">shipping & return policy</h2>
+				<div class="bottom-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+						<ul class="wrp-bt-content">
+							<li class="item-content">Lost her marbles ended up brown bread</li>
+							<li class="item-content">Snotty nosed brat it's nicked. </li>
+							<li class="item-content">Fish fingers and custard scouser teacakes</li>
+							<li class="item-content">Laughing gear what a doddle </li>
+							<li class="item-content">Figgy pudding spam fritters gob barmy</li>
+						</ul>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+				</div>
+			</div>
+			<div class="columm-left bottom-news"><h2 class="title-block">why choose the cavalier shop</h2>
+				<div id="accordion">
+				  	<div class="spoiler-head">
+						<h3 class="spoiler">we always use responsive design</h3>
+					</div>
+				  	<div class="spoiler-body">
+						<div class="sp-img"><img src="img/sp.jpeg" alt="" class="img-size">
+						</div>
+						<div class="sp-title">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
+					</div>
+					<div class="spoiler-head">
+						<h3 class="spoiler">we always use responsive design</h3>
+					</div>
+				  	<div class="spoiler-body">
+						<div class="sp-img"><img src="img/sp.jpeg" alt="" class="img-size">
+						</div>
+						<div class="sp-title">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
+					</div>
+					<div class="spoiler-head">
+						<h3 class="spoiler">we always use responsive design</h3>
+					</div>
+				  	<div class="spoiler-body">
+						<div class="sp-img"><img src="img/sp.jpeg" alt="" class="img-size">
+						</div>
+						<div class="sp-title">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
+					</div>
+					<div class="spoiler-head">
+						<h3 class="spoiler">we always use responsive design</h3>
+					</div>
+				  	<div class="spoiler-body">
+						<div class="sp-img"><img src="img/sp.jpeg" alt="" class="img-size">
+						</div>
+						<div class="sp-title">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
+					</div>
+			  </div>
+		  </div>
+	</section>
 	<footer class="main-footer"></footer>
 </body>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/slider.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script> 
 </html>
