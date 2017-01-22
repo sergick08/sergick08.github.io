@@ -280,7 +280,6 @@ body{
 /*Slider-Block*/
 .slider-block{
 	width: 100%;
-	min-height: 665px;
 	margin-bottom: 45px;
 	position: relative;
 }
@@ -366,8 +365,7 @@ body{
 
 }
 .img-slider{
-	width: 1910px;
-	min-height: 665px;
+	width: 100%;
 }
 .flex-control-nav{
 	position: absolute;
