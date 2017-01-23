@@ -883,7 +883,7 @@ body{
 .mail-text{
 	margin-bottom: 30px;
 }
-.fa-map-marker , .fa-phone , .fa-envelope-o{
+.fa-map-marker , .ft-contact .fa-phone , .fa-envelope-o{
 	font-size: 20px;
 	position: absolute;
 	top: 3px;
