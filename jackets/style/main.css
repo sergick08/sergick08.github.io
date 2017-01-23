@@ -555,7 +555,6 @@ body{
 .product{
 	float: left;
 	list-style: none;
-	margin-right:30px;
 }
 .product li:last-child{
 	margin-bottom: 0;
@@ -1012,4 +1011,51 @@ body{
 	margin: 0 5px;
 	color:#608eb5;
 
+}
+.wrp-prd{
+	position: relative;
+}
+.flex-nav-prev{
+	position: absolute;
+	top: 45%;
+    left: -17%;
+}
+.flex-nav-next{
+	position: absolute;
+	top: 45%;
+    right: -17%;
+}
+.flex-prev , .flex-next{
+	font-size: 0;
+	display: block;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+}
+.flex-prev{
+	background-color: #f6f6f6;
+	background-image: url("../img/style/sprt-next.png");
+	background-position: -23px 10px;
+	background-repeat: no-repeat;
+}
+
+.flex-next{
+	background-color: #f6f6f6;
+	background-image: url("../img/style/sprt-next.png");
+	background-position: 20px 10px;
+	background-repeat: no-repeat;
+}
+
+.flex-prev:hover{
+	background-color: #608eb5;
+	background-image: url("../img/style/sprt-next.png");
+	background-position: -23px -39px;
+	background-repeat: no-repeat;
+}
+
+.flex-next:hover{
+	background-color: #608eb5;
+	background-image: url("../img/style/sprt-next.png");
+	background-position: 20px -39px;
+	background-repeat: no-repeat;
 }
