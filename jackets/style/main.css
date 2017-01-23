@@ -1018,12 +1018,12 @@ body{
 .flex-nav-prev{
 	position: absolute;
 	top: 45%;
-    left: -17%;
+    left: -7%;
 }
 .flex-nav-next{
 	position: absolute;
 	top: 45%;
-    right: -17%;
+    right: -7%;
 }
 .flex-prev , .flex-next{
 	font-size: 0;
