@@ -366,6 +366,9 @@ body{
 
 }
 
+.img-slider{
+	width: 100%;
+}
 .flex-control-nav{
 	position: absolute;
 	bottom: 10%;
