@@ -121,6 +121,7 @@ body{
 .img-size{
 	width: 100%;
 	height: auto;
+	display: block;
 }
 .clearfix:after{
 	content:"";
@@ -249,7 +250,7 @@ body{
 	text-align: center;
 }
 .nav-item , .search-item{
-	margin-left:20px;
+	margin-right:20px;
 
 }
 
@@ -280,7 +281,6 @@ body{
 /*Slider-Block*/
 .slider-block{
 	width: 100%;
-	min-height: 665px;
 	margin-bottom: 45px;
 	position: relative;
 }
@@ -365,10 +365,7 @@ body{
 	background-color: #f6f6f6;
 
 }
-.img-slider{
-	width: 1910px;
-	min-height: 665px;
-}
+
 .flex-control-nav{
 	position: absolute;
 	bottom: 10%;
@@ -398,7 +395,7 @@ body{
 /*End-Slider*/
 /*Content*/
 .main-section{
-	padding-bottom:55px;
+	padding-bottom:50px;
 }
 .title-block{
 	text-align: center;
@@ -557,6 +554,9 @@ body{
 	list-style: none;
 	margin-right:30px;
 }
+.product li:last-child{
+	margin-bottom: 0;
+}
 .box ul:nth-child(4n+4){
 	margin-right: 0;
 }
@@ -582,6 +582,9 @@ body{
 	position: relative;
 	overflow: hidden;
 	max-width: 580px;
+}
+.small-banner{
+	margin-bottom: 8px;
 }
 
 .banner-overlay{
@@ -628,7 +631,6 @@ body{
 }
 /*Banner -bootom*/
 .banner-bottom{
-	min-height: 700px;
 	text-align: center;
 }
 .banner-bottom-wrp{
@@ -839,3 +841,171 @@ body{
 	margin-left: 15px;
 }
 
+/*Footer*/
+.main-footer{
+	background-color: #f6f6f6;
+	padding: 50px 0;
+}
+.ft-item{
+	width: 25%;
+	float: left;
+}
+.ft-info{
+	margin-bottom: 50px;
+}
+.ft-title{
+	font-family: Playfair-Display;
+	font-size: 16px;
+	line-height: 27px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.contact-text{
+	margin-left: 30px;
+	text-align: left;
+	display: inline-block;
+	font-family: Playfair-Display;
+	font-size: 13px;
+	line-height: 27px;
+	
+}
+.ft-contact{
+	margin-bottom:15px;
+	position: relative;
+}
+.ft-adress{
+	display: block;
+	margin-bottom: 30px;
+}
+.mail-text{
+	margin-bottom: 30px;
+}
+.fa-map-marker , .fa-phone , .fa-envelope-o{
+	font-size: 20px;
+	position: absolute;
+	top: 3px;
+	left: 0;
+	color:#608eb5;
+}
+.fa-map-marker{
+	font-size: 25px;
+}
+.social-item{
+	float: left;
+	margin-right: 10px;
+}
+.social-link{
+	display: block;
+	text-indent: -9999px;
+	width: 13px;
+	height: 15px;
+}
+.face{
+	background: url("../img/style/sp-social.png")0 0 no-repeat;
+	background-position: -6px -7px;
+}
+.twit{
+	background: url("../img/style/sp-social.png")0 0 no-repeat;
+	background-position: -27px -7px;
+}
+.insta{
+	background: url("../img/style/sp-social.png")0 0 no-repeat;
+	background-position: -50px -7px;
+}
+.googl{
+	background: url("../img/style/sp-social.png")0 0 no-repeat;
+	background-position: -72px -7px;
+}
+.in{
+	background: url("../img/style/sp-social.png")0 0 no-repeat;
+	background-position: -95px -7px;
+}
+.face:hover{
+	background: url("../img/style/sp-social.png")0 0 no-repeat;
+	background-position: -6px -34px;
+}
+.twit:hover{
+	background: url("../img/style/sp-social.png")0 0 no-repeat;
+	background-position: -27px -34px;
+}
+.insta:hover{
+	background: url("../img/style/sp-social.png")0 0 no-repeat;
+	background-position: -50px -34px;
+}
+.googl:hover{
+	background: url("../img/style/sp-social.png")0 0 no-repeat;
+	background-position: -72px -34px;
+}
+.in:hover{
+	background: url("../img/style/sp-social.png")0 0 no-repeat;
+	background-position: -95px -34px;
+}
+.ft-links{
+	display: block;
+	font-family: Playfair-Display;
+	font-size: 13px;
+	line-height: 27px;
+	color:#828282;
+	margin-bottom: 8px;
+}
+.ft-links:hover{
+	color:#608eb5;
+}
+.fast-wrp{
+	font-size: 14px;
+	line-height: 18px;
+	color:#828282;
+	margin-bottom: 18px;
+}
+.size-discount{
+	color:#608eb5;
+}
+.fast-email{
+	padding:10px 22px;
+	outline: none;
+	border-radius: 5px;
+	width: 100%;
+	background-color: #fff;
+	font-size: 12px;
+	color:#606060;
+	border:none;
+	margin-bottom: 15px;
+}
+.fast-action{
+	margin-left: 0px;
+	background-color: #fff; 
+}
+.ft-border{
+	width: 100%;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding:15px 0;
+	margin-bottom: 50px;
+}
+.ft-menu-link , .copy-text , .copy-logo{
+	font-size: 12px;
+	font-family: Playfair-Display;
+	line-height: 36px;
+	color: #636363;
+	vertical-align: middle;
+}
+.ft-menu-link {
+	text-transform: uppercase;
+	display: block;
+}
+.ft-menu-link:hover{
+	color:#608eb5;
+}
+.card{
+	width: 65px;
+	margin-right: 3px;
+	float: left;
+}
+.copyright{
+	text-align: center;
+}
+.copy-logo{
+	margin: 0 5px;
+	color:#608eb5;
+
+}
