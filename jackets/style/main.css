@@ -977,6 +977,7 @@ body{
 .fast-action{
 	margin-left: 0px;
 	background-color: #fff; 
+	outline: none;
 }
 .ft-border{
 	width: 100%;
