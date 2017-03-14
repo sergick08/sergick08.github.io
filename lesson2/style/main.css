@@ -23,6 +23,17 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'pacificoregular';
+    src: url('../fonts/pacifico-webfont.eot');
+    src: url('../fonts/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pacifico-webfont.woff2') format('woff2'),
+         url('../fonts/pacifico-webfont.woff') format('woff'),
+         url('../fonts/pacifico-webfont.svg#pacificoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -247,6 +258,11 @@ body{
  }
  .indie{
  	font-family: 'indie_flowerregular';
+ 	font-size: 18px;
+ 	line-height: 1.4;
+ }
+ .pacific{
+ 	font-family: 'pacificoregular';
  	font-size: 18px;
  	line-height: 1.4;
  }
