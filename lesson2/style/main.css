@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'dosisregular';
+    src: url('../fonts/dosis-regular-webfont.woff2') format('woff2'),
+         url('../fonts/dosis-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'indie_flowerregular';
+    src: url('../fonts/indieflower-webfont.woff2') format('woff2'),
+         url('../fonts/indieflower-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dosislight';
+    src: url('../fonts/dosis-light-webfont.woff2') format('woff2'),
+         url('../fonts/dosis-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+}
+body{
+	font-size: 18px;
+	font-family: dosislight ,arial, sans-serif;
+	color: #222;
+}
+.item{
+	font-size: 16px;
+	line-height: 24px;
+}
+/* img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+} */
+.block__title{
+	margin-bottom: 55px;
+}
+.wrapper{
+	max-width: 1600px;
+	padding-top: 20px;
+	margin: 0 auto;
+	
+}
+
+.title{
+	text-align: center;
+	font-size: 28px;
+    font-weight: 200;
+    line-height: 1.4;
+	color: #444;
+	margin-bottom: 30px;
+
+}
+.desc{
+	padding: 10px 0;
+	line-height: 1.4;
+}
+
+.list{
+	list-style-position: inside;
+	font-size: 14px;
+	margin-left: 15px;
+	margin-bottom: 30px;
+}
+.flex{
+	display: flex;
+	border: 1px solid #ccc;
+	padding: 5px 0;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;
+	transition: 0.8s;
+}
+ 
+.flex__box{
+	flex-basis: 300px;
+	background-color:#ccc;
+	border: 1px solid #999;
+	margin-bottom: 10px;
+}
+.flex__margin{
+	margin-right: 10px;
+}
+.flex__align:hover {
+	align-items: center;
+}
+.flex__justify:hover{
+	justify-content: center;
+}
+
+.flex__order:hover .box__order4{
+	order: 4;
+}
+/* Menu */
+.menu__wrp{
+	width: 100%;
+	height: 400px;
+}
+.nav{
+	text-align: center;
+	font-size: 0;
+	background: #454545;
+	list-style: none;
+}
+.nav__list{
+	display: inline-block;
+	position: relative;
+
+}
+.nav__link{
+	text-decoration: none;
+	padding: 10px 25px;
+	font-size: 18px;
+	text-transform: uppercase;
+	display: block;
+	color: #fff;
+}
+.sub__nav:after{
+	content: "";
+	display: block;
+	position: absolute;
+	border: 8px solid;
+	border-color: #fff transparent transparent transparent;
+    bottom: 11px;
+    right: 1px;
+    margin-right: 4px;
+}
+
+.nav__list:hover {
+	background: #ff541b;
+	transition: 0.5s;
+}
+
+.submenu{
+	border-top: 2px solid transparent;
+	transform: scaleY(0); 
+	transform-origin: 0 0; 
+	opacity: 0;
+	position: absolute;
+	width: 200px;
+
+
+}
+.sub__list{
+	background: #454545;
+}
+.sub__list:hover{
+	background: #ff541b;
+	transition: 0.5s;
+}
+.sub__link {
+	padding: 10px 0;
+	border-bottom:1px solid #ccc;
+}
+.nav__list:hover .submenu{
+	opacity: 1;
+	transform: scaleY(1);
+	transition: 0.5s transform;
+}
+/* SVG */
+.svg{
+	text-align: center;
+	margin-bottom: 40px;
+
+}
+.svg__img{
+	width: 850px;
+
+}
+
+.dashed{
+        font-size: 48px;
+        fill: #525558;
+        text-anchor: middle;
+        font-family: Georgia;
+        stroke: rgba(254, 0, 0, .5);
+		stroke-width: 2;
+		stroke-dasharray: 10 0;
+		fill: rgba(0, 0, 0, .1);
+      }
+
+.dashed:hover {
+    stroke-dasharray: 10 5;
+    cursor: pointer;
+    transition: 1s;
+    }
+    /* Изображения */
+ .wrp{
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: center;
+ }
+ .wrp__outside{
+ 	margin: 10px;
+ }
+ .list__img{
+ 	width: 100%;
+ 	margin: 0 auto;
+ }
+ .img__wrp{
+ 	width: 350px;
+ 	height: 350px;
+ 	border: 1px solid rgba(0,0,0,0.5);
+ 	margin-bottom:15px;
+ }
+ .box__img1{
+ 	display: block;
+ 	width: 100%;
+ 	height: 100%;
+ 	object-fit: contain;
+ 	object-position: 0% 0%;
+ }
+ .obpos100{
+ 	object-position: 100% 100%;
+ }
+ .ob__cover{
+ 	object-fit:cover;
+ 	object-position: 50% 0%;
+ }
+ .ob__cover_pos{
+ 	object-fit:cover;
+ 	object-position: 100% 0%;
+ }
+ /*Шрифты */
+ .font__desc{
+ 	margin-bottom: 10px;
+ }
+ .dosis{
+ 	font-family: 'dosisregular';
+ 	font-size: 18px;
+ 	line-height: 1.4;
+
+ }
+ .indie{
+ 	font-family: 'indie_flowerregular';
+ 	font-size: 18px;
+ 	line-height: 1.4;
+ }

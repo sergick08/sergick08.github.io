@@ -1,0 +1,275 @@
+/*Fonts*/
+@font-face {
+    font-family: 'dosismedium';
+    src: url('../fonts/dosis-medium-webfont.woff2') format('woff2'),
+    	 url('../fonts/dosis-medium-webfont.woff') format('woff');
+        /* url('..fonts/dosis-medium-webfont.woff') */
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'dosisregular';
+    src: url('../fonts/dosis-regular-webfont.woff2') format('woff2'),
+         url('../fonts/dosis-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'dosislight';
+    src: url('../fonts/dosis-light-webfont.woff2') format('woff2'),
+         url('../fonts/dosis-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'dosisextralight';
+    src: url('../fonts/dosis-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/dosis-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'roboto_lightregular';
+    src: url('../fonts/robotolight-webfont.woff2') format('woff2'),
+         url('../fonts/robotolight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dosissemibold';
+    src: url('../fonts/dosis-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/dosis-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+*{
+	margin: 0;
+	padding: 0;	
+	box-sizing: border-box;
+}
+form , input{
+	outline: none;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	outline: none;
+}
+*{
+	font-family: 'dosismedium';
+	font-size: 17px;
+	line-height: 20px;
+	color:#536783;
+}
+.img{
+	display: block;
+	width: 100%;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.container{
+	width: 1005px;
+	margin:0 auto;
+}
+/*Header*/
+.header{
+	width: 100%;
+	max-height:260px;
+	position: relative;
+}
+.header__top{
+	position: absolute;
+	width: 100%;
+	padding: 20px 0;
+  background-image: -moz-linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgb(213,232,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgb(213,232,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgba(255,255,255,0) 0%, rgb(213,232,255) 100%);
+  box-shadow: 0px 10px 29px 0px rgba(46, 8, 59, 0.34),inset 0px -1px 0px 0px rgba(255, 255, 255, 0.08);
+  left: 0px;
+  top: 0px;
+  z-index: 409;
+}
+.header__desc{
+	position: absolute;
+	right: 0;
+	left:0;
+	bottom: 20%;
+	text-align: left;
+}
+.collum-left{
+	float: left;
+}
+.collum-right{
+	float:right;
+}
+.nav{
+	padding-top: 20px;
+}
+.header__title{
+	font-size: 40px;
+	font-family: 'dosislight';
+	color:#e7fffe;
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: left;
+}
+
+.logo__link{
+	display: block;
+	/*text-indent: -9999px;*/
+	width=151px ;
+	height=60px;
+}
+/*Svg-Logo*/
+.cls-1 {
+        font-size: 50px;
+       /* filter: url(#filter);*/
+        fill: #e2fefd;
+        font-family: 'roboto_lightregular';
+      }
+.cls-1, .cls-3 {
+        font-weight: 200;
+      }
+.cls-2 {
+        font-size: 35px;
+        fill: #c2e7ff;
+        font-weight: 300;
+      }
+.cls-2, .cls-3 {
+        font-family: 'dosislight';
+      }
+.cls-3 {
+        font-size: 24.826px;
+        fill: #91dee5;
+      }
+/*End_Svg-Logo*/
+/*Header_Nav*/
+.nav__list{
+	margin: 0;
+	padding: 0;
+}
+.nav__item{
+	float:left;
+	position: relative;
+}
+.nav__item:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: -12px;
+	width: 14px;
+	height: 42px;
+	background:url("../img/style/1.png") 0 0 no-repeat;
+}
+.nav__link{
+	display: block;
+	color:#e2fefd;
+	font-size: 18px;
+	font-family: 'dosisregular';
+	text-transform: uppercase;	
+	padding: 8px 20px;
+	border:1px solid transparent;
+	transition: 0.5s;
+
+}
+.nav__link:hover{
+	border:1px solid rgba(255,255,255,0.2);
+	border-radius: 50px;
+	background-color: rgba(255, 255, 255, 0);
+	box-shadow: inset 0px 5px 8px 0px rgba(67, 74, 132, 0.36);
+	
+}
+.nav__item:hover:after{
+	content:none;
+}
+.nav__list li:last-of-type:after{
+	content: none;
+}
+/*Form*/
+.full__row{
+	background: #e9edf2;
+	width: 100%;
+}
+.block-form{
+	padding: 35px 0;
+}
+
+.form{
+	outline: none;
+  	border-radius: 10px;
+  	border:1px solid rgba(169, 184, 208, 0.388);
+  	box-shadow: inset 0px -5px 0px 0px rgba(177, 190, 206, 0.75);
+  	color:#909fb4;
+  	font-family: 'dosisregular';
+  	text-transform: uppercase;
+  	font-size: 18px;
+  	line-height: 18px;
+  	padding: 15px 30px;
+  	vertical-align: middle;
+  	width: 82.5%;
+    margin-right: 15px;
+}
+.btn{
+	border-radius: 10px;
+	color: #fff;
+	font-family: 'dosissemibold';
+	font-size: 18px;
+	line-height: 18px;
+	text-transform: uppercase;
+    background-image: -webkit-linear-gradient(left, rgb(57,181,74) 0%, rgb(141,198,63) 100%);
+    background-image: -o-linear-gradient(left, rgb(57,181,74) 0%, rgb(141,198,63) 100%);
+    background-image: linear-gradient(to right, rgb(57,181,74) 0%, rgb(141,198,63) 100%);
+    box-shadow: inset 0px -3px 0px 0px rgba(8, 130, 67, 0.75);
+    padding: 16px 46px;
+    vertical-align: middle;
+}
+.button {
+  
+ 
+  position: absolute;
+  left: 1309px;
+  top: 289px;
+  width: 154px;
+  height: 52px;
+  z-index: 63;
+}
